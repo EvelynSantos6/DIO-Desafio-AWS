@@ -6,25 +6,44 @@ O objetivo é registrar **anotações, insights e aprendizados** adquiridos dura
 
 ---
 
-## 🎯 Objetivos de Aprendizagem  
-- ✅ Aplicar conceitos aprendidos em um ambiente prático  
-- ✅ Documentar processos técnicos de forma clara e estruturada  
-- ✅ Utilizar o GitHub como ferramenta para compartilhamento de documentação técnica  
+Cada etapa corresponde a um **estado** definido na linguagem **Amazon States Language (ASL)**.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas  
-- **AWS Step Functions**  
-- **AWS Lambda**  
-- **Amazon S3**  
-- **IAM (Identity and Access Management)**  
-- **CloudWatch** (para monitoramento)  
+## 🚀 Benefícios
+
+- **Escalabilidade**: permite processar múltiplas execuções simultaneamente.  
+- **Baixo acoplamento**: cada etapa funciona de forma independente.  
+- **Monitoramento**: integração com **CloudWatch** para logs e métricas.  
+- **Confiabilidade**: suporte nativo a **retry** e tratamento de falhas.
 
 ---
 
-## 📂 Estrutura do Repositório  
-```bash
-📦 dio-aws-step-functions
- ┣ 📂 images/           # Capturas de tela do laboratório
- ┣ 📜 README.md         # Documentação principal
- ┣ 📜 anotacoes.md      # Insights e anotações adicionais
+## 🔧 Tecnologias Utilizadas
+
+- **AWS S3** – armazenamento de dados  
+- **AWS Lambda** – execução serverless  
+- **AWS Step Functions** – orquestração de tarefas  
+- **Amazon SNS** – envio de notificações  
+
+---
+
+## ▶️ Como Testar o Workflow
+
+1. Criar um bucket no **S3** para receber os dados.  
+2. Implementar uma função **Lambda** para processar os dados.  
+3. Configurar o **Step Functions** com as etapas do fluxo.  
+4. Criar outro bucket ou banco de dados para armazenar os resultados.  
+5. Configurar notificação via **SNS** para alertar quando o processamento terminar.
+
+---
+
+## 📌 Próximos Passos
+
+- Implementar **processamento paralelo** para múltiplos arquivos.  
+- Integrar com **DynamoDB** para armazenamento estruturado.  
+- Adicionar **testes automatizados** para cada etapa do fluxo.  
+
+---
+
+📸 Capturas de tela do laboratório estão na pasta `/images`.
